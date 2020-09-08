@@ -1,0 +1,69 @@
+#hero{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/david-hurley-aNR_LRKknN0-unsplash.jpg');
+}
+
+h2{
+    margin: 4rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.form-img, .form{
+    width: 45%;
+}
+
+.img-container, .special-img{
+    width: 90%;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+
+.contact-form-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.social-links-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333333;
+}
+
+.social-links-2 i{
+    color: #090909;
+}
+
+@media only screen and (max-width: 768px){
+    #hero{
+        background-position-x: 75%;
+    }
+    .contact-form,.contact-form-2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-img{
+        width: 90%;
+    }
+    .form{
+        width: 90%;
+    }
+    .form h3{
+        margin: 3rem 0;
+    }
+
+}
