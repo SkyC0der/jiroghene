@@ -39,11 +39,15 @@ span{
 }
 
 li{
-    margin: 1.5rem;
+    margin: 1rem 1rem;
 }
 
 a{
     color: #fff !important;
+}
+
+p{
+    font-size: 1rem;
 }
 
 img{
@@ -62,6 +66,14 @@ img{
 .nav-item{
     position: relative;
 }
+.navbar-brand{
+    width: auto;
+}
+
+/* ul.navbar-nav{
+    width: 70%;
+    max-width: 100%;
+} */
 
 /* .nav-link::after{
     content: '';
@@ -102,7 +114,8 @@ img{
 
 
 .navbar-nav {
-	display: flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 li.nav-item.active{
@@ -190,21 +203,82 @@ li.nav-item.active{
 }
 
 #hero{
-    background: url('../img/tony-pham-P9BHbcYCqx4-unsplash.jpg');
     background-repeat: no-repeat ;
     background-position: center;
     background-size: cover;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    width: 100%;
+
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item img{
+    width: 90%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    object-position: 50% 10% ;
 }
 
 .solid{
     background-color: #090909;
     color: #fdfdfd;
-    transition: all .3s ease-in;
+    transition: .3s;
 }
 
+.top{
+    margin-top: 6rem;
+}
+.card{
+    border-radius: 9px;
+}
 
+.card-img-top{
+    height: 90%;
+    width: 100%;
+}
+
+.card a{
+    height: 90%;
+    width: 100%;
+    display: block;
+}
+
+.card-body{
+    background-color: #f2f2f2 ;
+}
+.card-text{
+    padding: 1rem 0;
+    color: #000;
+}
+
+.card a:hover{
+    cursor: pointer;
+    transform: scale(0.99); 
+    transition: transform 0.3s ease-out;
+    text-decoration: none;
+}
+
+.card a:hover{
+    filter: brightness(90%);
+}
 
 .it{
     display: flex;
@@ -221,8 +295,16 @@ li.nav-item.active{
     float: right;
 }
 
+.top{
+    margin-bottom: 2rem ;
+}
 
-.one,.three{
+.two{
+width: 18px !important;
+}
+
+
+.one,.three, .two{
     width: 25px;
     height: 3px;
     margin: 3px 0;
@@ -270,7 +352,7 @@ li.nav-item.active{
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
     position: relative;
     right: 12px;
-    top: 0px;
+    top: -15px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
@@ -287,6 +369,27 @@ li.nav-item.active{
     align-items: flex-end;
 }
 
+.hero__heading h1{
+    margin-top: 3rem;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+
+/* Carousel Whit Flash */
+.carousel-inner>.item{
+    /*disables white flash*/
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+ }
+
+ .carousel-inner{
+    /*just incase the flash (style above) comes back*/
+       background: #000;
+    }
 
 
 /* About Section */
@@ -407,8 +510,12 @@ li.nav-item.active{
 
 }
 
+.imaginary{
+    height: 4vh;
+}
+
 #portfolio{
-    margin: 3rem;
+    margin-top: 6rem;
 }
 
 .portfolio-container{
@@ -466,6 +573,143 @@ li.nav-item.active{
     grid-column-start: span 1;
     grid-row-start:  span 1;
 }
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.wheel {
+    -webkit-animation: mouse-wheel 0.6s linear infinite;
+    -moz-animation: mouse-wheel 0.6s linear infinite;
+    animation: mouse-wheel 0.6s linear infinite;
+  }
+  
+  @-webkit-keyframes mouse-wheel{
+     0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-moz-keyframes mouse-wheel {
+    0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @-o-keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  
+  @-webkit-keyframes mouse-scroll {
+  
+    0%   { opacity: 0;}
+    50%  { opacity: .5;}
+    100% { opacity: 1;}
+  }
+  @-moz-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  
 
 .mouse{
     margin: auto;
@@ -527,7 +771,9 @@ li.nav-item.active{
       }
   }
 
-
+.socials p{
+    font-size: 18px;
+}
 main{
 	position: relative;
 	height: 100%;
@@ -556,8 +802,7 @@ main{
 	text-align: center;
 	font-weight: 500;
 	font-size: 1.5em;
-	letter-spacing: 1px;
-	color: #777;
+	/* color: #fff; */
 }
 .main .gallery{
 	position: relative;
@@ -607,13 +852,27 @@ main{
 	transform: scale(1.1);
 }
 
+.image{
+    margin: 2rem 0;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    object-position: 50% 60%;
+}
+
 @media only screen and (max-width: 768px){
     .navbar{
         background-color: #090909;
     }
+    .ml-4{
+        margin-left: 1rem !important;
+    }
     .navbar-nav li.nav-item{
         text-align: left;
-        width: 120px;
+        width: 208px;
     }
     .main h1{
 		font-size: 1.8em;
@@ -625,7 +884,16 @@ main{
 	.main .gallery{
 		display: grid;
 		grid-template-columns: auto auto auto;
-	}
+    }
+    #portfolio, #about{
+        margin-top: 5rem;
+    }
+    .imaginary{
+        height: 1vh;
+    }
+    .card{
+        margin: 2.5rem 0;
+    }
 }
 @media only screen and (max-width: 430px){
 	.main h1{
@@ -633,7 +901,7 @@ main{
 		width: 300px;
 	}
 	.main p{
-		font-size: 0.89em;
+		font-size:1rem;
 	}
 	.main .gallery{
 		display: block;
@@ -649,7 +917,6 @@ main{
 		filter: brightness(1) grayscale(0);
 	}
 }
-
 
 .container .box:nth-child(4n+2){
     grid-column-start: span 2;
@@ -687,7 +954,7 @@ main{
     animation-timing-function: ease-in-out;
 }
 
-.copy{
+.copy p{
     font-size: 12px;
 }
 .shrink{
@@ -709,9 +976,6 @@ main{
     }
     .about-content h2{
         margin-top: 3rem;
-    }
-    #hero{
-    background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/tony-pham-P9BHbcYCqx4-unsplash.jpg');
     }
     .social-icons{
         top: unset;
