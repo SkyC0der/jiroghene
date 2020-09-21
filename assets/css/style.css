@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -198,9 +198,15 @@ li.nav-item.active{
 
 .social-icons{
     position: absolute;
-    top: 425px;
+    top: 400px;
     left: 35px;
 }
+
+.social-icons i:hover, .social-icons i:focus{
+    color: #f48fb1 !important;
+    transition: all 0.2s ease-in;
+}
+
 
 #hero{
     background-repeat: no-repeat ;
@@ -213,7 +219,6 @@ li.nav-item.active{
 
 .carousel-inner{
     width: 100%;
-
     object-fit: cover;
     height: 100vh;
 }
@@ -477,6 +482,7 @@ width: 18px !important;
     display: flex;
     flex-direction: column;
     align-self: center;
+    text-align: center;
 }
 
 /* ---- grid ---- */
@@ -493,7 +499,7 @@ width: 18px !important;
 }
 
 /* ---- .grid-item ---- */
-
+/* 
 .grid-sizer,
 .grid-item {
   width: 32%;
@@ -508,7 +514,7 @@ width: 18px !important;
   max-width: 100%;
   margin-bottom: 10px;
 
-}
+} */
 
 .imaginary{
     height: 4vh;
@@ -852,6 +858,35 @@ main{
 	transform: scale(1.1);
 }
 
+#testimonial{
+    display: grid;
+    grid-template-columns:1fr ;
+    justify-content: center;
+    place-items: center;
+    font-size: .9rem;
+}
+
+.testimonial-heading{
+    margin-top: 5rem;
+}
+
+.testimonial{
+    margin: 2rem 0;
+}
+
+.testimonial-body{
+    border-left: 3px solid #f48fb1 ;
+    padding-left: 1rem;
+    line-height: 2;
+}
+
+.testimonial-footer{
+    display: flex;
+    color: rgb(156, 154, 154);
+    justify-content: flex-end;
+    font-style: italic;
+}
+
 .image{
     margin: 2rem 0;
 }
@@ -880,7 +915,11 @@ main{
 	}
 	.main p{
 		font-size: 1.2em;
-	}
+    }
+    .testimonial-footer{
+        font-size: 14px;
+        margin-top: -.5rem;
+    }
 	.main .gallery{
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -922,22 +961,18 @@ main{
     grid-column-start: span 2;
     grid-row-start:  span 1;
 }
-.container > .see-container{
-    place-items: center !important;
-    text-align: center;
-}
 
 
 .see-container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .see-all{
     border: 1px solid #333333;
     background-color: #333333;
     padding: .5rem 1.5rem;
-    align-self: end;
+    align-items: center;
     margin: 1rem 0;
     display: flex;
 }

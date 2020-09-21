@@ -7,3 +7,113 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand img {
+  width: 100%;
+}
+
+.p1:hover, .p2:hover {
+	opacity: .3;
+  cursor: pointer;
+}
+
+h4 {
+	color: grey;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#portfolio p {
+	color: grey;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+}
+
+.single-content{
+  margin: 2rem 0;
+}
+
+.single-content img{
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  object-position: 50% 60%;
+}
+
+.filters {
+	width: 100%;
+	text-align: center;
+}
+
+.main ul {
+	list-style: none;
+  padding: 20px 0;
+
+  
+}
+/*   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
+.main li {
+  font-size: 14px;
+  display: inline;
+  padding: .5rem;
+	color: rgb(179, 176, 176);
+	font-weight: 400;
+	cursor: pointer;
+  	text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 1rem .25rem;
+}
+
+.main li:hover {
+	color: #b6b3b3;
+}
+
+.main li.active {
+	color: #000;
+	border: 1px solid rgb(146, 144, 144);
+	border-radius: 10px;
+}
+
+.filters-select{
+  display: none;
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1200px){
+  .main li{
+    padding: .3rem .4rem;
+  }
+}
+
+
+@media only screen and (max-width:1020px){
+  .filter-buttons{
+    display:none;
+  }
+  h2.text-center{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  .filters-select{
+    display: block;
+    padding: .5rem;
+  }
+}
