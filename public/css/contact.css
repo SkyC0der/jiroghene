@@ -1,18 +1,28 @@
+.about-content h2, .form-2 h2{
+    margin-left: 0;
+    margin-left: 0;
+}
 
 
 h2{
-    margin: 2Rem 0;
+    margin: 2rem 0;
 }
 
 img{
     width: 100%;
 }
 
+.form-control{
+    color: #000;
+}
+
 .form-img,.form{
     width: 45%;
 } 
 
-
+#contact{
+    margin-top: 2rem;
+}
 
 .form-control:focus{
     box-shadow: none;
@@ -59,6 +69,10 @@ img{
     text-transform: uppercase;
     color: white;
     background-color: #333333;
+}
+
+.btn-primary{
+    border-color: transparent;
 }
 
 .social-links-2 i{

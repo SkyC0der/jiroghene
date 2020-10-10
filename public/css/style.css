@@ -70,49 +70,6 @@ img{
     width: auto;
 }
 
-/* ul.navbar-nav{
-    width: 70%;
-    max-width: 100%;
-} */
-
-/* .nav-link::after{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;  
-    background-color: #f48fb1;
-    animation: slide-out 300ms ease-in-out forwards;
-}
-.nav-link:hover{
-    background: lighten(#eceff1,5%);
-    color: #546e7a;
-}
-.nav-link:hover::after{
-    animation: slide-in 300ms;
-}
-    @keyframes slide-out{
-      0%{
-        transform: none;
-      }
-      100%{
-        transform: translateX(100%);
-        }
-    }
-    @keyframes slide-in{
-        0%{
-        transform: translateX(-100%);
-        }
-        100%{
-        transform: none;
-        }
-    }
-   */
-
-
-
 .navbar-nav {
     display: flex;
     flex-wrap: wrap;
@@ -135,11 +92,6 @@ li.nav-item.active{
 	color: #78909c;
 	transition: all 0.2s;
 }
-/* 
-.navbar-nav li.nav-item a:after {
-
-	animation: slide-out 300ms ease-out forwards;
-} */
 
 .navbar-nav li.nav-item a:hover:after {
     content: '';
@@ -1044,5 +996,11 @@ main{
 @media only screen and (max-width: 769px){
     .navbar{
         padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 310px){
+    h1{
+        font-size: 2.5rem;
     }
 }
