@@ -944,19 +944,17 @@ main{
 .copy p{
     font-size: 12px;
 }
-.shrink{
-    width:  15%;
-}
+/* .shrink{
+    width:  40px;
+} */
 .shrink img{
-    width: 40%;
+    width: 40px;
 }
 @media only screen and (max-width: 600px){
     h1{
         font-size: 3rem;
     }
-    .shrink img{
-        width: 60%;
-    }
+    
     span{
         font-size: 1.2rem;
         font-weight: 500;
@@ -979,6 +977,7 @@ main{
     }
     #about{
         flex-direction: column;
+        padding-bottom: 2rem !important;
     }
     .about-content{
         width: 90%;
