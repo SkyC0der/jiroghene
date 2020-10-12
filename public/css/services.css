@@ -13,10 +13,6 @@ li {
 #services > h2 {
   margin: 3rem 0;
 }
-/* 
-	box-shadow: 2px 2px 10px #777777;
-	border-top: 8px solid #3A3A3A;
-	border-radius: 4px; */
 .card {
   color: #9494ae;
   padding: 1.75rem;
@@ -26,15 +22,7 @@ li {
   height: fit-content;
   width: 34%;
   flex: 0 0 30%;
-  /* border: 1px solid #242444; */
 }
-/* 
-.card:hover {
-	border-top: 8px solid #6863CE;
-	border-radius: 4px;
-	transform: translateY(-1em);
-	transition: all 0.2s ease-out;
-} */
 
 .card__title {
   font-size: 0.875rem;
@@ -76,15 +64,6 @@ a.card__button {
   height: auto;
   text-align: center;
 }
-/* 
-.card:hover .card__button {
-	background-color: #6863CE;
-	border-color: #6863CE;
-}
-
-.card:hover .price {
-	color: #6863CE;
-} */
 
 ul {
   list-style-type: none;
@@ -106,88 +85,87 @@ ul {
   color: #242444;
 }
 
-.row2{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+.row2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.card:hover{
-	transition: all .45s ease-in;
-	background-color: #242444;
+.card:hover {
+  transition: all 0.45s ease-in;
+  background-color: #242444;
 }
 #advanced:hover .card__list__item,
 #advanced:hover .card__title,
-#advanced:hover .price{
-	transition: all .25s ease-in;
-	color: #fff;
+#advanced:hover .price {
+  transition: all 0.25s ease-in;
+  color: #fff;
 }
 
-#advanced:hover .list__item i{
-	transition: all .45s ease-in;
-	color: #9494ae;
+#advanced:hover .list__item i {
+  transition: all 0.45s ease-in;
+  color: #9494ae;
 }
 
-#advanced:hover .card__button{
-	background-color: #f7afad;
+#advanced:hover .card__button {
+  background-color: #f7afad;
 }
 
-.card__button:hover{
-	background-color: #b36d6b;
+.card__button:hover {
+  background-color: #b36d6b;
 }
 
-.return{
-	position: absolute;
-	left: 60px;
-	top: 120px;
+.return {
+  position: absolute;
+  left: 60px;
+  top: 120px;
 }
 
-.return::before{
-	content: '\f053';
-	font-family: FontAwesome;
-	display: inline-block;
-	width: 1.3rem; /* same as padding-left set on li */
+.return::before {
+  content: '\f053';
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3rem;
+}
+
+a.link {
+  color: #242444 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .row2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-a.link{
-	color: #242444 !important;
+  .card {
+    flex: 1;
+    width: 90%;
+  }
+
+  .return {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+  }
 }
 
-@media only screen and (max-width: 767px){
-	.row2{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+  .card {
+    flex: 0 0 45%;
+    width: 50%;
+  }
 
-	.card{
-		flex: 1;
-		width: 90%;
-	}
+  .return {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+  }
 
-	.return{
-		position: absolute;
-		left: 20px;
-		top: 100px;
-	}
-}
-
-@media only screen and (min-width:767px) and (max-width: 1200px){
-	.card{
-		flex: 0 0 45% ;
-		width: 50%;
-	}
-
-	.return{
-		position: absolute;
-		left: 30px;
-		top: 100px;
-	}
-
-	.row2{
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: flex-start;
-	}
-
+  .row2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
 }

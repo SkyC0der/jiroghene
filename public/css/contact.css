@@ -41,6 +41,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.25rem;
 }
 .contact-form div{
     width: 80%;
