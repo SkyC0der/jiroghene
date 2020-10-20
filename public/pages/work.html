@@ -1,82 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nigerian Based Portrait and Commercial Photographer. ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nigerian Based Portrait and Commercial Photographer. "
+    />
 
     <!-- Bootstrap CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/9b1c8d52ed.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9b1c8d52ed.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css" />
 
-    <link rel="stylesheet" href="/public/css/work.css">
+    <link rel="stylesheet" href="/public/css/work.css" />
     <title>Jiroghene Photography - Works</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-          <!-- Navbar Section -->
-          <section id="navbar">
-            <nav class="navbar solid navbar-expand-lg navbar-light text-white fixed-top">
-                <a class="navbar-brand ml-4" href="/index.html"><span>Jiroghene Studios</span></a>
-                <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="one"></span>
-                  <span class="two"></span>
-                  <span class="three"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarmenu">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link " href="/public/pages/work.html">Portfolio</a>
-                    </li>
-                    <!-- <li class="nav-item ">
-                      <a class="nav-link" href="/public/pages/portraits.html">Portraits</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="/public/pages/kids.html">Kids</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="/public/pages/commercial.html">Commercial Photography</a>
-                    </li> -->
-  
-                    <!-- <li class="nav-item">
-                      <a class="nav-link " href="/public/pages/about.html">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link " href="/public/pages/training.html">Training</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/public/pages/contact.html" class="nav-link">Contact Me</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </section>
+      <!-- Navbar Section -->
+      <section id="navbar">
+        <nav
+          class="navbar solid navbar-expand-lg navbar-light text-white fixed-top"
+        >
+          <a class="navbar-brand ml-4" href="/index.html"
+            ><span>Jiroghene Studios</span></a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarmenu"
+            aria-controls="navbarsExample04"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/public/pages/work.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/public/pages/training.html"
+                  >Training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/public/pages/contact.html" class="nav-link"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
       <section id="portfolio" class="container">
-        <h2 class="text-center">Portfolio</h2> 
-      
+        <h2 class="text-center serif">Portfolio</h2>
+
         <div class="filters filter-button-group filter-buttons main">
           <ul>
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".portraits">Portraits</li>
-            <li data-filter=".beauty">Beauty</li>
-            <li data-filter=".fashion">Fashion</li>
-            <li data-filter=".lifestyle">Lifestyle and Events</li>
-            <li data-filter=".weddings">Weddings</li>
-            <li data-filter=".kids">Kids</li>
-            <li data-filter=".commercial">Commercial Photography</li>
+            <li><button class="active" data-filter="*">All</button></li>
+            <li><button data-filter=".portraits">Portraits</button></li>
+            <li><button data-filter=".beauty">Beauty</button></li>
+            <li><button data-filter=".fashion">Fashion</button></li>
+            <li><button data-filter=".lifestyle">Lifestyle and Events</button></li>
+            <li><button data-filter=".weddings">Weddings</button></li>
+            <li><button data-filter=".kids">Kids</button></li>
+            <li><button data-filter=".commercial">Commercial Photography</button></li>
           </ul>
         </div>
 
         <div class="">
-          <select class="filters filters-select ">
+          <select class="filters filters-select">
             <option value="*">All</option>
             <option value=".portraits">Portraits</option>
             <option value=".beauty">Beauty</option>
@@ -89,168 +103,218 @@
         </div>
 
         <div class="content row grid">
-
           <div class="single-content portraits col-md-6 webdev grid-item">
-            <img alt = "photo" src="/public/img/jiro.jpeg">
+            <img alt="photo" src="/public/img/jiro.jpeg" />
           </div>
 
           <div class="single-content col-md-6 brand portraits grid-item">
-            <img alt = "photo" src="/public/img/portrait-3.jpeg">
-          </div>
-          
-          <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-1.jpg">
-          </div>
-          
-          <div class="single-content portraits brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/portrait-2.jpg">
-          </div>
-
-          <div class="single-content portraits brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/portrait-1.jpg">
+            <img alt="photo" src="/public/img/portrait-3.jpeg" />
           </div>
 
           <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-2.jpg">
+            <img alt="photo" src="/public/img/commercial-1.jpg" />
+          </div>
+
+          <div class="single-content portraits brand col-md-6 grid-item">
+            <img alt="photo" src="/public/img/portrait-2.jpg" />
+          </div>
+
+          <div class="single-content portraits brand col-md-6 grid-item">
+            <img alt="photo" src="/public/img/portrait-1.jpg" />
+          </div>
+
+          <div class="single-content commercial brand col-md-6 grid-item">
+            <img alt="photo" src="/public/img/commercial-2.jpg" />
           </div>
 
           <div class="single-content kids brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/kid-5.jpg">
+            <img alt="photo" src="/public/img/kid-5.jpg" />
           </div>
 
           <div class="single-content fashion brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/fashion-1.jpeg">
+            <img alt="photo" src="/public/img/fashion-1.jpeg" />
           </div>
 
           <div class="single-content lifestyle brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/lifestyle-3.jpeg">
+            <img alt="photo" src="/public/img/lifestyle-3.jpeg" />
           </div>
 
           <div class="single-content kids brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/kid-1.jpg">
+            <img alt="photo" src="/public/img/kid-1.jpg" />
           </div>
 
           <div class="single-content portraits brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/portrait-6.png">
+            <img alt="photo" src="/public/img/portrait-6.png" />
           </div>
 
           <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-3.jpg">
+            <img alt="photo" src="/public/img/commercial-3.jpg" />
           </div>
 
           <div class="single-content weddings brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/wedding-1.jpg">
+            <img alt="photo" src="/public/img/wedding-1.jpg" />
           </div>
 
           <div class="single-content weddings brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/wedding-5.jpg">
+            <img alt="photo" src="/public/img/wedding-5.jpg" />
           </div>
 
           <div class="single-content portraits brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/portrait-5.jpg">
+            <img alt="photo" src="/public/img/portrait-5.jpg" />
           </div>
 
           <div class="single-content kids brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/kid-2.jpg">
+            <img alt="photo" src="/public/img/kid-2.jpg" />
           </div>
 
           <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-4.jpg">
+            <img alt="photo" src="/public/img/commercial-4.jpg" />
           </div>
 
           <div class="single-content lifestyle brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/lifestyle-4.jpg">
+            <img alt="photo" src="/public/img/lifestyle-4.jpg" />
           </div>
 
           <div class="single-content weddings brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/wedding-3.jpg">
+            <img alt="photo" src="/public/img/wedding-3.jpg" />
           </div>
 
           <div class="single-content kids brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/kid-3.jpg">
+            <img alt="photo" src="/public/img/kid-3.jpg" />
           </div>
 
           <div class="single-content beauty brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/beauty-3.jpg">
+            <img alt="photo" src="/public/img/beauty-3.jpg" />
           </div>
 
           <div class="single-content beauty brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/beauty-2.jpg">
+            <img alt="photo" src="/public/img/beauty-2.jpg" />
           </div>
 
           <div class="single-content beauty brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/beauty-1.jpg">
+            <img alt="photo" src="/public/img/beauty-1.jpg" />
           </div>
 
           <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-6.jpg">
+            <img alt="photo" src="/public/img/commercial-6.jpg" />
           </div>
 
           <div class="single-content lifestyle brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/lifestyle-5.jpg">
+            <img alt="photo" src="/public/img/lifestyle-5.jpg" />
           </div>
 
           <div class="single-content kids brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/kid-4.jpg">
+            <img alt="photo" src="/public/img/kid-4.jpg" />
           </div>
 
           <div class="single-content commercial brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/commercial-5.jpg">
+            <img alt="photo" src="/public/img/commercial-5.jpg" />
           </div>
 
           <div class="single-content weddings brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/wedding-2.jpg">
+            <img alt="photo" src="/public/img/wedding-2.jpg" />
           </div>
 
           <div class="single-content fashion brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/beauty-1.jpg">
+            <img alt="photo" src="/public/img/beauty-1.jpg" />
           </div>
 
           <div class="single-content fashion brand col-md-6 grid-item">
-            <img alt = "photo" src="/public/img/banter.jpg">
+            <img alt="photo" src="/public/img/banter.jpg" />
           </div>
-          
         </div>
-            
       </section>
 
+      <div class="back-to-top">
+        <a href="#app">
+          <div class="icon">
+            <img src="/public/img/up-arrow.svg" alt="">
+          </div>
+        </a>
+      </div>
 
-      <section id="footer">
-          <div class="container footer-body">
-            <div class="contact">
-              <p><i class="fas fa-envelope mr-2"></i> hello@jiroghenestudios.com</p>
-            </div>
 
-            <div class="socials">
-              <p>Social Media </p>
-              <div class="social-links">
-                <div class="twitter">
-                  <a href="https://twitter.com/jir_oghene" target="blank" aria-label="twitter-link"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="instagram">
-                  <a target="blank" aria-label="instgagram-link" href="https://www.instagram.com/jiroghenephotography/"><i class="fab fa-instagram "></i></a>              
-                </div>
-                <div class="linkedin">
-                  <a target="blank" aria-label="linkedin-link" href="http://linkedin.com/in/josephine-ikubor-7435371b7"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+      <div id="footer">
+      <div class="footer__menu">
+        <ul class="footer__menu__list">
+          <li class="menu__item">
+            <h4 class="heading">Photography</h4>
+            <a href="#" class="list__link">Portraits</a>
+            <a href="#" class="list__link">Weddings</a>
+            <a href="#" class="list__link">Events & Lifestyle</a>
+            <a href="#" class="list__link">Commercial</a>
+          </li>
+          <li class="menu__item">
+            <h4 class="heading">About</h4>
+            <a href="#" class="list__link">Prices</a>
+            <a href="#" class="list__link">Trainings</a>
+            <a href="#" class="list__link">Contact</a>
+          </li>
+          <li class="menu__item">
+            <h4 class="heading">Contact Info</h4>
+            <a href="#" class="list__link">hello@jiroghenestudios.com</a>
+            <a href="#" class="list__link">+234 801 2345 6789</a>
+            <div class="social-links-2">
+              <div class="twitter">
+                <a
+                  href="https://twitter.com/jir_oghene"
+                  target="blank"
+                  name="twitter-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </div>
-            </div> 
-          </div> 
-          <div class="text-center copy p-2">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jiroghene Studios All Rights Reserved.</p>
-          </div> 
+              <div class="instagram">
+                <a
+                  target="blank"
+                  href="https://www.instagram.com/jiroghenephotography/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="linkedin">
+                <a
+                  target="blank"
+                  href="http://linkedin.com/in/josephine-ikubor-7435371b7"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <div class="facebook">
+                <a
+                  target="blank"
+                  href="http://facebook.com/jiroghenestudios/"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
       
-      </section>
-
+      </div>
+      <div class="text-center copy p-2">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Jiroghene Studios All Rights Reserved.
+        </p>
+        <a href="#" class="text-white">Privacy Policy</a>
+      </div>
     </div>
 
     <!-- JS, Popper.js, and jQuery -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
     <!-- <script src="/public/js/main.js"></script> -->
     <script>
        $(document).ready( function() {   
@@ -259,36 +323,32 @@
         itemSelector: '.grid-item',
       });
 
-      // filter items on button click
-      $('.filter-button-group').on( 'click', 'li', function() {
-        var filterValue = $(this).attr('data-filter');
-        $('.grid').isotope({ filter: filterValue });
-        $('.filter-button-group li').removeClass('active');
-        $(this).addClass('active');
-      });
+      // // filter items on button click
+      // $('.filter-button-group').on( 'click', 'a', function() {
+      //   var filterValue = $(this).attr('data-filter');
+      //   $('.grid').isotope({ filter: filterValue });
+      //   $('.filter-button-group a').removeClass('active');
+      //   $(this).addClass('active');
+      // });
 
-        var filterFns = {
-        // show if number is greater than 50
-        numberGreaterThan50: function() {
-          var number = $(this).find('.number').text();
-          return parseInt( number, 10 ) > 50;
-        },
-        // show if name ends with -ium
-        ium: function() {
-          var name = $(this).find('.name').text();
-          return name.match( /ium$/ );
-        }
-      };
+      //   var filterFns = {
+      //   // show if number is greater than 50
+      //   numberGreaterThan50: function() {
+      //     var number = $(this).find('.number').text();
+      //     return parseInt( number, 10 ) > 50;
+      //   },
+       
+      // };
 
       $('.filters-select').on( 'change', function() {
         // get filter value from option value
         var filterValue = this.value;
         // use filterFn if matches value
-        filterValue = filterFns[ filterValue ] || filterValue;
+        filterValue =  filterValue;
         $('.grid').isotope({ filter: filterValue });
       });
     })
-    </script>
+    </script> -->
     <!-- <script>
       // init Isotope
       // var $grid = $('.grid').isotope({
@@ -301,8 +361,57 @@
       
 
     </script> -->
+
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-   
-</body>
+    <script>
+      // filter functions
+        
+
+        function getHashFilter() {
+        // get filter=filterName
+        var matches = location.hash.match( /filter=([^&]+)/i );
+        var hashFilter = matches && matches[1];
+        return hashFilter && decodeURIComponent( hashFilter );
+      }
+
+      // init Isotope
+      var $grid = $('.grid');
+
+      // bind filter button click
+      var $filterButtonGroup = $('.filter-button-group');
+      $filterButtonGroup.on( 'click', 'button', function() {
+        var filterAttr = $( this ).attr('data-filter');
+        // set filter in hash
+        location.hash = 'filter=' + encodeURIComponent( filterAttr );
+      });
+
+      var isIsotopeInit = false;
+
+      function onHashchange() {
+        var hashFilter = getHashFilter();
+        if ( !hashFilter && isIsotopeInit ) {
+          return;
+        }
+        isIsotopeInit = true;
+        // filter isotope
+        $grid.isotope({
+          itemSelector: '.grid-item',
+          layoutMode: 'fitRows',
+          // use filterFns
+          filter: hashFilter
+        });
+        // set selected class on button
+        if ( hashFilter ) {
+          $filterButtonGroup.find('.active').removeClass('active');
+          $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
+        }
+      }
+
+      $(window).on( 'hashchange', onHashchange );
+
+      // trigger event handler to init Isotope
+      onHashchange();
+    </script>
+  </body>
 </html>

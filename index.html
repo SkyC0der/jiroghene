@@ -1,238 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nigerian Based Portrait and Commercial Photographer. ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nigerian Based Portrait and Commercial Photographer. "
+    />
 
     <!-- Bootstrap CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/9b1c8d52ed.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9b1c8d52ed.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
 
-    <link rel="stylesheet" href="/public/css/style.css">
-
-    <title>Jiroghene Studios</title>
-
-</head>
-<body>
+    <title>Jiroghene Photography Studio - Shooting stars!</title>
+  </head>
+  <body>
     <div id="app">
-        <!-- Navbar Section -->
-         <section id="navbar">
-          <nav class="navbar navbar-expand-lg navbar-light text-white fixed-top">
-              <a class="navbar-brand ml-4" href="index.html"><span>Jiroghene Studios</span></a>
-              <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </button>
-            
-              <div class="collapse navbar-collapse" id="navbarmenu">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item  active">
-                    <a class="nav-link" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="/public/pages/work.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="/public/pages/training.html">Training</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="/public/pages/contact.html" class="nav-link">Contact Me</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </section>
+      <!-- Navbar Section -->
+      <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light text-white fixed-top">
+          <a class="navbar-brand" href="index.html"
+            ><span>Jiroghene Photography Studio</span></a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarmenu"
+            aria-controls="navbarsExample04"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
 
-        <!-- Hero Section -->
-        <section id="hero" >
-            <!-- Social Icons -->
-            <div class="social-icons ">
-              <div class="twitter">
-                <a target="blank" href="https://twitter.com/jir_oghene" name="header-twitter"><i class="fab fa-twitter mb-5"></i></a>
-              </div>
-              <div class="instagram">
-                <a target="blank" href="https://www.instagram.com/jiroghenephotography/"><i class="fab fa-instagram mb-5"></i></a>              
-              </div>
-              <div class="linkedin">
-                <a target="blank" href="http://linkedin.com/in/josephine-ikubor-7435371b7"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-            <div class="container hero__heading text-center p-3">
-                <div>
-                  <h1>Jiroghene Photography</h1>
-                  <p class="text-white mt-4 small-on-mobile"><em>We are stars on earth, I shoot the stars.</em></p>
-                </div>
-                <a href="#imaginary">
-                  <div class="mouse">
-                    <div class="mouse-icon">
-                      <span class="mouse-wheel"></span>
-                    </div>
-                    <div>
-                      <span class="m_scroll_arrows unu"></span>
-                      <span class="m_scroll_arrows doi"></span>
-                      <span class="m_scroll_arrows trei"></span>
-                    </div>
-                  </div>
-                </a>
-                <div>
-                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-interval="2000"  data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./public/img/wedding-1.jpg" class="d-block w-100" alt="carousel-image">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./public/img/portrait-5.jpg" class="d-block w-100" alt="carousel-image">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./public/img/portrait-6.png" class="d-block w-100" alt="carousel-image">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./public/img/wedding-3.jpg" class="d-block w-100" alt="carousel-image">
-                      </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            
-        </section>
-
-        <section id= "imaginary" class="imaginary">
-
-        </section>
-
-        <section id="portfolio">
-          <div id="portfolio-2" class="main">
-          <div class=" container">
-            <div class="row cards-list">
-              <div class="image  col-md-4">
-                <img alt = "photo" src="/public/img/portrait-1.jpg">
-              </div>
-    
-              <div class="image col-md-4">
-                <img alt = "photo" src="/public/img/commercial-2.jpg">
-              </div>
-    
-              <div class="image col-md-4">
-                <img alt = "photo" src="/public/img/fashion-1.jpeg">
-              </div>
-    
-              <div class="image  col-md-4">
-                <img alt = "photo" src="/public/img/lifestyle-3.jpeg">
-              </div>
-    
-              <div class="image col-md-4">
-                <img alt = "photo" src="/public/img/kid-1.jpg">
-              </div>
-    
-              <div class="image  col-md-4">
-                <img alt = "photo" src="/public/img/portrait-6.png">
-              </div>
-            </div>
-            </div>
-            <div class="see-container text-center container">
-              <a href="/public/pages/work.html" class="see-all">See All</a>
-            </div>
-        </section>
-
-        <!-- Testimonial Section -->
-        <section id="testimonial" class="container mb-5">
-          <div class="testimonial-heading mb-2 text-center">
-            <h2>WHAT PEOPLE SAY ABOUT MY PHOTOGRAPHY?</h2>
+          <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/public/pages/work.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/public/pages/training.html"
+                  >Training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/public/pages/contact.html" class="nav-link"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
           </div>
+        </nav>
+      </section>
 
-           <div>
-            <div class="testimonial 1">
-              <figure class="testimonial-body">
-                <blockquote>
-                  “Jiroghene is not just a photographer who takes beautiful photographs, Jiroghene portrays shared moments in a charming way (no poses, no rehearsals, without realising that he is there!) Once again, thank you very much Jiroghene for having made so many happy moments that we lived that day so beautifully!”
-                </blockquote>
-            </figure>
-              <div class="testimonial-footer">
-                <figcaption>
-                  -Ojeifo & Girl
-                </figcaption>
-              </div>
-            </div>
-
-            <div class="testimonial 1">
-              <figure class="testimonial-body">
-                <blockquote>
-                  "Thank you for your superb work, we are truly amazed by our wedding photos. The photos are absolutely beautiful, you managed to capture our special day moment by moment. Every time we look at the images we are reminded of the emotion, the laughs and fun of the day."
-                </blockquote>
-              </figure>
-              <div class="testimonial-footer">
-                <figcaption>
-                  -Ozo & Nengi
-                </figcaption>
-              </div>
-            </div>
-
-            <div class="testimonial 1">
-              <figure class="testimonial-body">
-                <blockquote>
-                  "Jiroghene is a sensational photographer and an incredible person. The session was very light and spontaneous, nothing plastered or rehearsed. He has a very peculiar style that makes the photos amazing. We love the result and how it managed to capture the naturalness of our moments as a couple. We highly recommend his work!”
-                </blockquote>
-              </figure>
-              <div class="testimonial-footer">
-                <figcaption>
-                  -Neo & Vee
-                </figcaption>
-              </div>
-            </div>
-           </div>
-           <div class="see-container text-center container">
-            <a href="/public/pages/contact.html" class="see-all">Contact Me</a>
-          </div>
-        </section>
-
-        <section id="footer" class="">
-          <div class="container footer-body">
-            <div class="contact">
-              <p><i class="fas fa-envelope mr-2"></i> hello@jiroghenestudios.com</p>
-            </div>
-  
-            <div class="socials">
-              <p>Social Media </p>
-              <div class="social-links">
-              <div class="twitter">
-                <a href="https://twitter.com/jir_oghene" target="blank" name= "twitter-link"><i class="fab fa-twitter"></i></a>
-              </div>
-              <div class="instagram">
-                <a target="blank" href="https://www.instagram.com/jiroghenephotography/"><i class="fab fa-instagram "></i></a>              
-              </div>
-              <div class="linkedin">
-                <a target="blank" href="http://linkedin.com/in/josephine-ikubor-7435371b7"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              </div>
-            </div>
-          </div>   
-        <div class="text-center copy p-2">
-          <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jiroghene Studios All Rights Reserved.</p>
+      <section id="title" class="container">
+        <h1>Jiroghene Photography Studio</h1>
+        <span>We are stars on Earth, <br />I shoot the stars.</span>
+        <div class="title-bg">
+          <img src="./public/img/Ellipse 8.png" alt="" />
         </div>
       </section>
+
+      <section id="carousel" class="container">
+        <!-- Flickity HTML init -->
+        <div
+          class="carousel"
+          data-flickity='{ "autoPlay": 3000, "wrapAround": true  }'
+          data-flickity="{  }"
+        >
+          <div class="carousel-cell">
+            <a href="/public/pages/work.html#filter=.weddings">
+              <div class="carousel-image">
+                <img
+                  src="./public/img/wedding-1.jpg"
+                  class="w-100"
+                  alt="carousel-image"
+                />
+              </div>
+              <div class="carousel-caption">
+                <span>Weddings</span>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a href="/public/pages/work.html#filter=.portraits">
+              <div class="carousel-image">
+                <img
+                  src="./public/img/alexander-krivitskiy-d6-szeKRV5U-unsplash.jpg"
+                  class="w-100"
+                  alt="carousel-image"
+                />
+              </div>
+              <div class="carousel-caption">
+                <span>Portraits</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-cell">
+            <a href="/public/pages/work.html#filter=.kids">
+              <div class="carousel-image">
+                <img
+                  src="./public/img/kid-2.jpg"
+                  class="w-100"
+                  alt="carousel-image"
+                />
+              </div>
+              <div class="carousel-caption">
+                <span>Kids</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-cell">
+            <a href="/public/pages/work.html#filter=.commercial">
+              <div class="carousel-image">
+                <img
+                  src="./public/img/commercial-1.jpg"
+                  class="w-100"
+                  alt="carousel-image"
+                />
+              </div>
+              <div class="carousel-caption">
+                <span>Commercial Photos</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-cell">
+            <a href="/public/pages/work.html#filter=.lifestyle">
+              <div class="carousel-image">
+                <img
+                  src="./public/img/lifestyle-3.jpeg"
+                  class="w-100"
+                  alt="carousel-image"
+                />
+              </div>
+              <div class="carousel-caption">
+                <span>Commercial Photos</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <h1 class="heading">About Us</h1>
+        <span>Shooting The Stars.</span>
+        <div class="about__item">
+          <div class="about-bg my-3">
+            <img
+              src="./public/img/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
+              alt="about-bg"
+            />
+          </div>
+
+          <div class="about-content mt-5">
+            <p>
+              Hello, Jiroghene Photography Studio is an organized team of
+              photographers based in Benin-City, Edo State.
+            </p>
+            <p>
+              We provide photography services, videography services, printing
+              services, training, internship and studio rental services.
+            </p>
+            <p>
+              Our philosophy is to create understanding relationships with
+              clients, listen to their vision, and incorporate it with style –
+              This approach results in beautiful, authentic photographs that
+              will become your legacy for future generations. We aim to provide
+              maximum satisfaction for all our clients by giving them the best
+              of the best.
+            </p>
+            <div class="quote">
+              <blockquote>
+                <span>"</span> We are stars on earth, I shoot the stars
+                <span>"</span>
+              </blockquote>
+              <figcaption>
+                - Josephine Ikubor<br />
+                <em class="small-text">CEO, Jiroghene Photography Studios</em>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Shots -->
+      <div id="recents" class="mb-5 container">
+        <h2 class="text-center serif">Recent Shots</h2>
+        <div class="carousel-2">
+          <div class="carousel-slide">
+            <a href="/public/pages/work.html#filter=.portraits">
+              <article>
+                <div class="img-top">
+                  <img src="./public/img/beauty-2.jpg" alt="" />
+                </div>
+                <div class="carousel-caption-2">
+                  <header>
+                    <div class="item__category heading">
+                      Portrait Photography
+                    </div>
+                    <div class="item__title serif">
+                      <span>Classic and Vogue</span>
+                    </div>
+                  </header>
+                  <p>
+                    Classic human, he strikes an awesome pose. Classic. Vogue!
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="carousel-slide">
+            <a href="/public/pages/work.html#filter=.commercial">
+              <article>
+                <div class="img-top">
+                  <img src="./public/img/commercial-2.jpg" alt="" />
+                </div>
+                <div class="carousel-caption-2">
+                  <header>
+                    <div class="item__category heading">
+                      Commercial Photography
+                    </div>
+                    <div class="item__title serif">
+                      <span> Mizong Cosmetics</span>
+                    </div>
+                  </header>
+                  <p>
+                    Classic human, he strikes an awesome pose. Classic. Vogue!
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="carousel-slide">
+            <a href="/public/pages/work.html#filter=.kids">
+              <article>
+                <div class="img-top">
+                  <img
+                    src="./public/img/joey-pilgrim-ZRNBiVs7Vzo-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-caption-2">
+                  <header>
+                    <div class="item__category heading">Family Photos</div>
+                    <div class="item__title serif">
+                      <span>Mother and Child</span>
+                    </div>
+                  </header>
+                  <p>
+                    Classic human, he strikes an awesome pose. Classic. Vogue!
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="carousel-slide">
+            <a href="/public/pages/work.html#filter=.lifestyle">
+              <article>
+                <div class="img-top">
+                  <img
+                    src="./public/img/melissa-westbrook-rOrzz0vqVP0-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-caption-2">
+                  <header>
+                    <div class="item__category heading">
+                      Lifestyle and Events
+                    </div>
+                    <div class="item__title serif">
+                      <span>Flower Queen</span>
+                    </div>
+                  </header>
+                  <p>
+                    Classic human, he strikes an awesome pose. Classic. Vogue!
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
       </div>
 
+      <div id="testimonials" class="container">
+        <h2 class="text-center serif">Testimonials</h2>
+        <div class="testimonial-carousel">
+          <div class="carousel-slide-2">
+            <div class="quote testimonial">
+              <blockquote>
+                <span>"</span> It's with so much joy and satisfaction that i
+                recommend Jiroghene Photography to whosoever that is reading
+                this right now, and might want to work with her! Over the years,
+                Jiroghene has displayed a high level of professionalism and a
+                good work ethic in her line of duty making her stand out amongst
+                her colleagues in town. Her Creative mindset and zeal for
+                perfection are truly phenomenal which in turn brings client's
+                satisfaction and fulfillment. She has a very special spark and i
+                trust she will go far in making you satisfied with a JOB WELL
+                DONE <span>"</span>
+              </blockquote>
+              <figcaption>
+                <div class="line-img">
+                  <img src="./public/img/line.png" alt="" />
+                </div>
+                - Meek Brown<br />
+                <em class="small-text">PR, Critic Circle</em>
+              </figcaption>
+            </div>
+          </div>
+          <div class="carousel-slide-2">
+            <div class="quote testimonial">
+              <blockquote>
+                <span>"</span>Jiroghene is not just a photographer who takes
+                beautiful photographs, Jiroghene portrays shared moments in a
+                charming way (no poses, no rehearsals, without realising that he
+                is there!) Once again, thank you very much Jiroghene for having
+                made so many happy moments that we lived that day so
+                beautifully! <span>"</span>
+              </blockquote>
+              <figcaption>
+                <div class="line-img">
+                  <img src="./public/img/line.png" alt="" />
+                </div>
+                - Ojay<br />
+                <em class="small-text">Songwriter</em>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h2 class="serif">Book a Session with Us</h2>
+
+        <div>
+          <ul class="contact-details">
+            <li>
+              <h4 class="heading">Email</h4>
+              <p>hello@jiroghenestudios.com</p>
+            </li>
+            <li>
+              <h4 class="heading">phone</h4>
+              <p>+234 801 2345 6789</p>
+            </li>
+            <li>
+              <h4 class="heading">Socials</h4>
+              <div class="social-links-2">
+                <div class="twitter">
+                  <a
+                    href="https://twitter.com/jir_oghene"
+                    target="blank"
+                    name="twitter-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="instagram">
+                  <a
+                    target="blank"
+                    href="https://www.instagram.com/jiroghenephotography/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="linkedin">
+                  <a
+                    target="blank"
+                    href="http://linkedin.com/in/josephine-ikubor-7435371b7"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="facebook">
+                  <a target="blank" href="http://facebook.com/jiroghenestudios/"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="serif slogan">
+          <span
+            >I'm an artist who creates beautiful and romantic portraiture.
+            <br /> </span
+          ><span> I am committed to my art</span>
+          <span>and every client's individuality. </span>
+        </div>
+
+        <div class="footer__menu">
+          <ul class="footer__menu__list">
+            <li class="menu__item">
+              <h4 class="heading">Photography</h4>
+              <a href="#" class="list__link">Portraits</a>
+              <a href="#" class="list__link">Weddings</a>
+              <a href="#" class="list__link">Events & Lifestyle</a>
+              <a href="#" class="list__link">Commercial</a>
+            </li>
+            <li class="menu__item">
+              <h4 class="heading">About</h4>
+              <a href="#" class="list__link">Prices</a>
+              <a href="#" class="list__link">Trainings</a>
+              <a href="#" class="list__link">Contact</a>
+            </li>
+            <li class="menu__item">
+              <h4 class="heading">Contact Info</h4>
+              <a href="#" class="list__link">hello@jiroghenestudios.com</a>
+              <a href="#" class="list__link">+234 801 2345 6789</a>
+              <div class="social-links-2">
+                <div class="twitter">
+                  <a
+                    href="https://twitter.com/jir_oghene"
+                    target="blank"
+                    name="twitter-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="instagram">
+                  <a
+                    target="blank"
+                    href="https://www.instagram.com/jiroghenephotography/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="linkedin">
+                  <a
+                    target="blank"
+                    href="http://linkedin.com/in/josephine-ikubor-7435371b7"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="facebook">
+                  <a target="blank" href="http://facebook.com/jiroghenestudios/"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center copy p-2">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Jiroghene Studios All Rights Reserved.
+        </p>
+        <a href="#" class="text-white">Privacy Policy</a>
+      </div>
+    </div>
 
     <!-- JS, Popper.js, and jQuery -->
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="./public/js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      
-    <!-- Initialize AOS -->
-    <script>
-      AOS.init();
-    </script>
-  
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
