@@ -1,3 +1,7 @@
+body{
+    color: #1b1b1b;
+}
+
 .about-content h2, .form-2 h2{
     margin-left: 0;
     margin-left: 0;
@@ -7,6 +11,8 @@
 h2{
     margin: 2rem 0;
 }
+
+
 
 img{
     width: 100%;
@@ -25,6 +31,30 @@ img{
     background-color: #fff;
 }
 
+.training-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    height: 40px;
+  
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 40px;
+    z-index: 2;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .icon img {
+    margin-top: .5rem;
+    height: 25px;
+  }
+  
+
 .contact-bg{
     background: url('../img/david-hurley-aNR_LRKknN0-unsplash.jpg');
     height: 40vh;
@@ -37,6 +67,38 @@ img{
 .contact-bg > .heading{
     font-size: 32px;
     color: #fff !important;
+}
+
+.service-slide{
+    position: relative;
+    margin-top: 3rem;
+}
+.carousel-caption-2  a.mt-2{
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(119, 119, 111);
+}
+
+.service-slide .heading{
+    font-size: 14px;
+    padding: 0 .75rem;
+}
+
+.btn:focus, .btn:active{
+    background-color: inherit;
+}
+
+
+.service-slide hr{
+    border-top: 1px solid #21171760;
+    width: 100%;
+}
+
+.price span{
+    display: block;
+    font-size: 26px;
 }
 
 
@@ -148,4 +210,36 @@ img{
         margin: 3rem 0;
     }
 
+}
+
+@media (min-width:800px){
+    .service-slide{
+        max-width: 800px;
+    }
+    .service-slide .carousel-caption-2{
+        position: absolute;
+        left: 500px;
+        height: 355px;
+        top: 30px;
+        width: 400px;
+    
+    }
+
+    .service-slide .img-top{
+        width: 600px;
+        height: 400px;
+    }
+    
+    .img-top img{
+        object-fit: cover;
+    }
+
+    .img-top:hover{
+        filter: brightness(.8);
+        cursor: pointer;
+    }
+
+    .row{
+        justify-content: center;
+    }
 }
