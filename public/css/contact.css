@@ -86,8 +86,14 @@ img{
     padding: 0 .75rem;
 }
 
-.btn:focus, .btn:active{
-    background-color: inherit;
+.btn:focus, .btn:active,.service-slide .btn:hover{
+    background-color: #3a2e2eea;
+    color: #fff !important;
+    border: 0;
+}
+
+.service-slide a:hover{
+    color: unset !important;
 }
 
 

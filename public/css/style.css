@@ -530,7 +530,7 @@ width: 18px !important;
     text-transform: uppercase;
     letter-spacing: .03em;
     font-weight: 400;
-    color: #666;
+    color: rgb(116, 116, 116);
 }
 
 .carousel-slide{

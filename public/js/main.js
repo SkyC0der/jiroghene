@@ -67,7 +67,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 500,
     autoplay: true,
     arrows:true,
     prevArrow: backButton,
