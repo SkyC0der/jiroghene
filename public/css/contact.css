@@ -248,4 +248,14 @@ img{
     .row{
         justify-content: center;
     }
+
+    form .row{
+        justify-content: flex-start;
+    }
+
+    .contact-bg{
+        background-size: cover;
+        height: 60vh;
+        background-position: 0 30%;
+    }
 }
