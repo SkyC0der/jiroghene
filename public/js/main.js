@@ -63,7 +63,7 @@ $(document).ready(function () {
   });
 
   $('.carousel').slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     infinite: true,
