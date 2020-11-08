@@ -31,16 +31,20 @@
       rel="stylesheet"
       href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="/public/css/style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Jiroghene Photography Studio - Shooting stars!</title>
+    <script src="//code.jivosite.com/widget/FGMHyDRyHu" async></script>
   </head>
   <body>
     <div id="app">
       <!-- Navbar Section -->
       <section id="navbar">
         <nav class="navbar navbar-expand-lg navbar-light text-white fixed-top">
-          <a class="navbar-brand" href="index.html"
+          <a class="navbar-brand" href="/"
             ><span>Jiroghene Photography Studio</span></a
           >
           <button
@@ -60,18 +64,18 @@
           <div class="collapse navbar-collapse" id="navbarmenu">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/public/pages/work.html">Portfolio</a>
+                <a class="nav-link" href="/gallery">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/public/pages/training.html"
+                <a class="nav-link" href="/academy"
                   >Training</a
                 >
               </li>
               <li class="nav-item">
-                <a href="/public/pages/contact.html" class="nav-link"
+                <a href="/contact" class="nav-link"
                   >Contact Me</a
                 >
               </li>
@@ -79,22 +83,24 @@
           </div>
         </nav>
       </section>
-      
-      <section id="carousel" >
-        <!-- Flickity HTML init -->
+     
+             
+       <section id="carousel" >
         <div
           class="carousel"
         >
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.weddings">
+            <a href="/gallery#filter=.weddings">
               <div class="carousel-image">
                 <!-- <img
-                  src="./public/img/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
+                  src="./img/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
                   class="w-100"
                   alt="carousel-image"
                 /> -->
                 <picture>
-                  <img src="./public/img/Untitled-7.jpg" alt="wedding photography" class="w-100">
+                  <source srcset="./img/Untitled-7.jpg 2x" sizes="((min-width: 1200px) and (orientation: landscape)) 2880px,
+                  100vw">
+                  <img src="./img/Untitled-7.jpg" alt="wedding photography" class="w-100">
                 </picture>
               </div>
               <div class="carousel-caption">
@@ -103,10 +109,10 @@
             </a>
           </div>
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.portraits">
+            <a href="/gallery#filter=.portraits">
               <div class="carousel-image">
                 <img
-                  src="./public/img/Untitled-8.jpg"
+                  src="./img/Untitled-8.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -118,10 +124,10 @@
           </div>
 
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.kids">
+            <a href="/gallery#filter=.kids">
               <div class="carousel-image">
                 <img
-                  src="./public/img/carousel-4.jpg"
+                  src="./img/carousel-2.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -133,10 +139,10 @@
           </div>
 
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.commercial">
+            <a href="/gallery#filter=.commercial">
               <div class="carousel-image">
                 <img
-                  src="./public/img/carousel-2.jpg"
+                  src="./img/carousel-2.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -148,10 +154,10 @@
           </div>
 
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.lifestyle">
+            <a href="/gallery#filter=.lifestyle">
               <div class="carousel-image">
                 <img
-                  src="./public/img/carousel-6.jpg"
+                  src="./img/carousel-6.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -163,10 +169,10 @@
           </div>
 
           <div class="carousel-cell">
-            <a href="/public/pages/work.html#filter=.lifestyle">
+            <a href="/gallery#filter=.lifestyle">
               <div class="carousel-image">
                 <img
-                  src="./public/img/carousel-5.jpg"
+                  src="./img/carousel-5.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -182,16 +188,16 @@
 
       <section id="about" class="container">
         <h1 class="heading">About Us</h1>
-        <span>Shooting The Stars.</span>
-        <div class="about__item">
+        <span data-aos="fade-up">Shooting The Stars.</span>
+        <div class="about__item" data-aos="fade-right">
           <div class="about-bg my-3">
             <img
-              src="./public/img/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
+              src="./img/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
               alt="about-bg"
             />
           </div>
 
-          <div class="about-content mt-5">
+          <div class="about-content mt-5" data-aos="fade-left">
             <p>
               Hello, Jiroghene Photography Studio is an organized team of
               photographers based in Benin-City, Edo State.
@@ -227,10 +233,10 @@
       
         <div class="carousel-2">
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.portraits">
+            <a href="/gallery#filter=.portraits">
               <article>
                 <div class="img-top">
-                  <img src="./public/img/portrait-8.jpg" alt="" />
+                  <img src="./img/portrait-8.jpg" alt="" />
                 </div>
                 <div class="carousel-caption-2">
                   <header>
@@ -250,10 +256,10 @@
           </div>
 
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.commercial">
+            <a href="/gallery#filter=.commercial">
               <article>
                 <div class="img-top">
-                  <img src="./public/img/commercial-3.jpg" alt="commercial-photography" />
+                  <img src="./img/commercial-3.jpg" alt="commercial-photography" />
                 </div>
                 <div class="carousel-caption-2">
                   <header>
@@ -273,11 +279,11 @@
           </div>
 
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.kids">
+            <a href="/gallery#filter=.kids">
               <article>
                 <div class="img-top">
                   <img
-                    src="./public/img/kid-7.jpg"
+                    src="./img/kid-7.jpg"
                     alt=""
                   />
                 </div>
@@ -297,11 +303,11 @@
           </div>
 
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.lifestyle">
+            <a href="/gallery#filter=.lifestyle">
               <article>
                 <div class="img-top">
                   <img
-                    src="./public/img/portrait-13.jpg"
+                    src="./img/portrait-13.jpg"
                     alt=""
                   />
                 </div>
@@ -323,11 +329,11 @@
           </div>
 
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.portraits">
+            <a href="/gallery#filter=.portraits">
               <article>
                 <div class="img-top">
                   <img
-                    src="./public/img/portrait-6.jpg"
+                    src="./img/portrait-6.jpg"
                     alt=""
                   />
                 </div>
@@ -350,11 +356,11 @@
 
 
           <div class="carousel-slide">
-            <a href="/public/pages/work.html#filter=.portraits">
+            <a href="/gallery#filter=.portraits">
               <article>
                 <div class="img-top">
                   <img
-                    src="./public/img/portrait-17.jpg"
+                    src="./img/portrait-17.jpg"
                     alt=""
                   />
                 </div>
@@ -396,7 +402,7 @@
               </blockquote>
               <figcaption>
                 <div class="line-img">
-                  <img src="./public/img/line.png" alt="" />
+                  <img src="./img/line.png" alt="" />
                 </div>
                 - Meek Brown<br />
                 <em class="small-text">PR, Critic Circle</em>
@@ -415,7 +421,7 @@
               </blockquote>
               <figcaption>
                 <div class="line-img">
-                  <img src="./public/img/line.png" alt="" />
+                  <img src="./img/line.png" alt="" />
                 </div>
                 - Ojay<br />
                 <em class="small-text">Songwriter</em>
@@ -426,20 +432,20 @@
       </div>
 
       <div id="contact">
-        <h2 class="serif">Book a Session with Us</h2>
+        <h2 class="serif">Book A Session with Us</h2>
 
         <div>
           <ul class="contact-details">
             <li>
-              <h4 class="heading">Email</h4>
+              <h4 class="heading">Send Us An Email</h4>
               <a href="mailto:hello@jiroghenestudios.com?subject=Book%20A%20Session&body=Hello%20Jiroghene%20Photography%20Studios%2C%20I%20came%20across%20your%20work%20and%20I%20would%20like%20to%20book%20a%20session%20with%20you.%0D%0A%0D%0AThanks%2C%0D%0A" class="list__link text-body">hello@jiroghenestudios.com</a>
             </li>
             <li>
-              <h4 class="heading">phone</h4>
-              <p>+234 801 2345 6789</p>
+              <h4 class="heading">Give us a call </h4>
+              <a href="tel:+2347035639414">+234 703 5639 414</a>
             </li>
             <li>
-              <h4 class="heading">Socials</h4>
+              <h4 class="heading">Our Socials</h4>
               <div class="social-links-2">
                 <div class="twitter">
                   <a
@@ -459,13 +465,13 @@
                 <div class="linkedin">
                   <a
                     target="blank" rel="noopener"
-                    href="http://linkedin.com/in/josephine-ikubor-7435371b7"
+                    href="https://linkedin.com/in/josephine-ikubor-7435371b7"
 
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
                 </div>
                 <div class="facebook">
-                  <a target="blank" rel="noopener" href="http://facebook.com/jiroghenestudios/"
+                  <a target="blank" rel="noopener" href="https://facebook.com/jiroghenestudios/"
                     ><i class="fab fa-facebook"></i
                   ></a>
                 </div>
@@ -488,20 +494,20 @@
           <ul class="footer__menu__list">
             <li class="menu__item">
               <h4 class="heading">Photography</h4>
-              <a href="/public/pages/work.html#filter=.portraits"" class="list__link">Portraits</a>
-              <a href="/public/pages/work.html#filter=.weddings" class="list__link">Weddings</a>
-              <a href="/public/pages/work.html#filter=.lifestyle" class="list__link">Events & Lifestyle</a>
-              <a href="/public/pages/work.html#filter=.commercial" class="list__link">Commercial</a>
+              <a href="/gallery#filter=.portraits"" class="list__link">Portraits</a>
+              <a href="/gallery#filter=.weddings" class="list__link">Weddings</a>
+              <a href="/gallery#filter=.lifestyle" class="list__link">Events & Lifestyle</a>
+              <a href="/gallery#filter=.commercial" class="list__link">Commercial</a>
             </li>
             <li class="menu__item">
               <h4 class="heading">About</h4>
-              <a href="/public/pages/training.html" class="list__link">Trainings</a>
-              <a href="/public/pages/contact.html" class="list__link">Contact</a>
+              <a href="/academy" class="list__link">Trainings</a>
+              <a href="/contact" class="list__link">Contact</a>
             </li>
             <li class="menu__item">
               <h4 class="heading">Contact Info</h4>
               <a href="mailto:hello@jiroghenestudios.com?subject=Book%20A%20Session&body=Hello%20Jiroghene%20Photography%20Studios%2C%20I%20came%20across%20your%20work%20and%20I%20would%20like%20to%20book%20a%20session%20with%20you.%0D%0A%0D%0AThanks%2C%0D%0A" class="list__link">hello@jiroghenestudios.com</a>
-              <a href="#" class="list__link">+234 801 2345 6789</a>
+              <a href="tel:+2347035639414" class="text-white">+234 703 5639 414</a>
             </li>
           </ul>
         </div>
@@ -514,10 +520,11 @@
           </script>
           Jiroghene Studios All Rights Reserved.
         </p>
-        <a href="#" class="text-white">Privacy Policy</a>
+        <a href="/privacy-policy" class="text-white">Privacy Policy</a>
       </div>
     </div>
 
+   
     <!-- JS, Popper.js, and jQuery -->
 
     <script
@@ -525,6 +532,9 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script> $(function() { AOS.init(); }); </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -536,6 +546,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="./public/js/main.js"></script>
+  
+    <script src="./js/main.js"></script>
   </body>
 </html>

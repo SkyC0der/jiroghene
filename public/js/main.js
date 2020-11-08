@@ -63,7 +63,7 @@ $(document).ready(function () {
   });
 
   $('.carousel').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
     infinite: true,
@@ -85,7 +85,7 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       },

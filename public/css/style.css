@@ -106,10 +106,13 @@ li.nav-item.active > a{
 	overflow: hidden;
 	text-align: center;
 }
+.carousel-cell{
+    position: relative;
+}
 
-.navbar-nav li.nav-item a {
+.navbar-nav li.nav-item a.nav-link {
 	display: block;
-	color: #666;
+	color: #4D4D4D;
 	transition: all 0.2s;
 }
 .nav-link{
@@ -184,8 +187,6 @@ li.nav-item.active > a{
   }
   
   .carousel-image img{
-      height: 500px;
-      object-fit: cover;
       filter: brightness(65%);
   } 
 
@@ -530,7 +531,11 @@ width: 18px !important;
     text-transform: uppercase;
     letter-spacing: .03em;
     font-weight: 400;
-    color: rgb(116, 116, 116);
+    color:#454545;
+}
+
+#footer .heading{
+    color:#a6a6a6;
 }
 
 .carousel-slide{
@@ -633,8 +638,7 @@ width: 18px !important;
 }
 
 .contact-details li{
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .social-links-2{
@@ -785,12 +789,12 @@ a.list__link{
     font-size: 18px;
 }
 
-.image img{
+/* .image img{
     width: 100%;
     object-fit: cover;
     height: 500px;
     object-position: 50% 60%;
-}
+} */
 
 @media only screen and (min-width: 1025px){
     #title{
@@ -931,6 +935,28 @@ a.list__link{
     font-size: 14px;
 }
 
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    max-width: 1140px;
+    margin: 1rem auto;
+}
+
+.contact-details li{
+    margin: 1rem 2rem;
+}
+
+.contact-details li .heading{
+    margin: 1rem 0rem;
+    font-size: 14px;
+}
+
+.contact-details li a{
+    font-size: 18px;
+}
+
 .footer__menu{
     max-width: 1000px;
     display: flex;
@@ -970,13 +996,13 @@ h4.heading::after{
     .navbar-nav li.nav-item{
         text-align: left;
     }
-    .main h1{
+    /* .main h1{
 		font-size: 1.8em;
 		width: 400px;
-	}
-	.main p{
+	} */
+	/* .main p{
 		font-size: 1.2em;
-    }
+    } */
     #portfolio, #about{
         margin-top: 5rem;
     }
@@ -987,21 +1013,6 @@ h4.heading::after{
         margin: 2.5rem 0;
     }
 }
-@media only screen and (max-width: 430px){
-	.main h1{
-		font-size: 1.2em;
-		width: 300px;
-	}
-	.main p{
-		font-size:1rem;
-	}
-}
-
-.container .box:nth-child(4n+2){
-    grid-column-start: span 2;
-    grid-row-start:  span 1;
-}
-
 
 .copy{
     background-color: #121212;
