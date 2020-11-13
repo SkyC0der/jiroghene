@@ -71,7 +71,7 @@ img{
 .navbar{
     background-color: #fff;
     padding: 1rem;
-    box-shadow: 0 2px 30px -8px rgba(0, 0, 0, 0.301)
+    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.2)
 }
 
 .navbar-light .navbar-brand{
@@ -194,7 +194,7 @@ li.nav-item.active > a{
 .carousel-caption{
     display: block;
     position: absolute;
-    top: 360px;
+    top: 200px;
     left: 100px;
     right: 100px;
     width: 250px;
@@ -933,6 +933,14 @@ a.list__link{
 
 .heading{
     font-size: 14px;
+}
+
+.map{
+    border-radius: 10px;
+}
+
+.map iframe{
+    border-radius: 10px;
 }
 
 .contact-details{

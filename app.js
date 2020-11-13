@@ -11,6 +11,7 @@ app.use(express.static('public'));
 // Allow front-end access to node_modules folder
 app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
+
 // Listen for HTTP requests on port 3000
 app.listen(port, () => {
   console.log('listening on %d', port);
@@ -60,3 +61,11 @@ app.get('/academy/professional', function(req, res) {
 app.get('/academy/retouching', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/services.html'));
 });
+
+app.use(function (req, res, next) {
+    res.status(404).sendFile(path.join(__dirname + '/public/pages/404.html'));
+})
+
+app.use(function (req, res, next) {
+res.status(500).sendFile(path.join(__dirname + '/public/pages/500.html'));
+})

@@ -6,7 +6,9 @@ ul {
   padding-left: 0;
 }
 
-
+h1{
+  font-size: 2.25rem;
+}
 
 #services > h2 {
   margin: 3rem 0;
@@ -182,5 +184,8 @@ hr{
   }
   p{
     font-size: 17px;
+  }
+  h1{
+    font-size: 3rem;
   }
 }
