@@ -186,13 +186,13 @@ li.nav-item.active > a{
       height: auto !important;
   }
   
-  .carousel-image img{
+  /* .carousel-image img{
       filter: brightness(65%);
-  } 
+  }  */
 
 
 .carousel-caption{
-    display: block;
+    display: none;
     position: absolute;
     top: 200px;
     left: 100px;
@@ -856,7 +856,7 @@ a.list__link{
     display: block;
 }
 .carousel-caption{
-    display: flex;
+    display: none ;
     justify-content: flex-end;
     position: absolute;
     bottom: 30px;

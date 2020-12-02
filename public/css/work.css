@@ -75,7 +75,8 @@ h4 {
 
 .single-content img{
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #facbcb3f;
   height: 500px;
   object-position: 50% 60%;
 }
