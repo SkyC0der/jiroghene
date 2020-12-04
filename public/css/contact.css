@@ -31,6 +31,26 @@ img{
     background-color: #fff;
 }
 
+#contact__heading{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-me{
+    width:45%;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.about-img{
+    width: 50%
+    
+}
+.about-img img{
+    max-width: 80%;
+}
+
 .training-heading{
     display: flex;
     flex-direction: column;
