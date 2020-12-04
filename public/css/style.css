@@ -960,10 +960,7 @@ a.list__link {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-  }
+@media only screen and (max-width: 1200px) {
 
   .navbar-brand span {
     font-size: .8rem;
@@ -975,10 +972,16 @@ a.list__link {
   }
 
   .navbar-brand{
-
     margin-left: 0;
     margin-right: .5rem;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
   .slick-next {
     right: 7px;
   }

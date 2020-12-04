@@ -79,7 +79,7 @@ img{
     background-color: #f077a7d0;
     z-index: -1;
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
 }
 
 .training-heading{
