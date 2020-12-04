@@ -74,12 +74,12 @@ img{
 
 .important::before{
     content: '';
-    height: 5px;
+    height: 4px;
     width: 100%;
     background-color: #f077a7d0;
     z-index: -1;
     position: absolute;
-    bottom: 3px;
+    bottom: 2px;
 }
 
 .training-heading{
