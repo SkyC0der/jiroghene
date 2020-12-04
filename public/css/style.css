@@ -79,6 +79,11 @@ img {
 .navbar-brand {
   width: auto;
 }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 
 .navbar-brand > span {
   font-family: 'Playfair Display', serif;
@@ -157,15 +162,10 @@ li.nav-item.active > a {
   overflow: hidden;
 }
 
-/* Fickity */
 
 #carousel {
   height: 100%;
   margin: 4.5rem 0;
-}
-
-.carousel-j {
-  display: none;
 }
 
 .carousel-cell a {
@@ -376,18 +376,6 @@ span.slick-next:hover {
   width: 100%;
 }
 
-/* Carousel Whit Flash */
-.carousel-inner > .item {
-  /*disables white flash*/
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  -o-transition: -o-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-inner {
-  /*just incase the flash (style above) comes back*/
-  background: #000;
-}
 
 /* Title Section */
 
@@ -543,11 +531,10 @@ span.slick-next:hover {
 .img-top img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: rgba(233, 231, 231, 0.658);
 }
-.img-top img:first-child {
-  object-position: 0% 20%;
-}
+
 
 /* Testimonial */
 
@@ -800,9 +787,6 @@ a.list__link {
     object-fit: contain;
   }
 
-  .carousel-j {
-    display: block;
-  }
   .carousel-caption {
     display: none;
     justify-content: flex-end;
@@ -827,6 +811,13 @@ a.list__link {
   }
   .navbar-brand {
     margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .logo-container{
+    width: 80px;
+    margin-right: 1rem;
   }
   .nav-link {
     margin-top: 0;
@@ -850,15 +841,8 @@ a.list__link {
   }
   .about-content {
     width: 45%;
-    text-align: center;
+    text-align: left;
   }
-
-  /* #recents{
-    margin-top: 4rem;
-    max-width: 1140px;
-    display: grid;
-    place-items: center;
-} */
 
   .carousel-2 {
     display: flex;
@@ -950,13 +934,7 @@ a.list__link {
   .navbar-nav li.nav-item {
     text-align: left;
   }
-  /* .main h1{
-		font-size: 1.8em;
-		width: 400px;
-	} */
-  /* .main p{
-		font-size: 1.2em;
-    } */
+
   #portfolio,
   #about {
     margin-top: 5rem;
@@ -988,9 +966,19 @@ a.list__link {
   }
 
   .navbar-brand span {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
+  .logo-container{
+    margin-right: 0;
+    width: 60px;
+  }
+
+  .navbar-brand{
+
+    margin-left: 0;
+    margin-right: .5rem;
+  }
   .slick-next {
     right: 7px;
   }

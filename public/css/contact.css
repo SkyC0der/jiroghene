@@ -32,7 +32,7 @@ img{
 }
 
 #contact__heading{
-    margin-top: 10vh;
+    margin-top: 14vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,11 +44,42 @@ img{
 }
 
 .about-img{
-    width: 50%
-    
+    width: 50%;
+    position: relative;   
+}
+
+.about-img:before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: 70%;
+    width: 70%;
+    background-color: #f077a7d0;
+    z-index: -1;
 }
 .about-img img{
     max-width: 80%;
+}
+
+.intro-about{
+    font-size: 22px;
+    background-color: #f077a7d0;
+}
+
+.important{
+    margin: 0 .5rem;
+    position: relative;
+}
+
+.important::before{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #f077a7d0;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
 }
 
 .training-heading{
@@ -203,10 +234,47 @@ img{
     background-color: #5cb85c;
     width: 200px;
 }
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .logo-container{
+    width: 80px;
+    margin-right: 1rem;
+  }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){    
+    
+    .navbar-brand span {
+        font-size: .8rem;
+    }
+    
+    .logo-container{
+        margin-right: 0;
+        width: 60px;
+    }
+    
     #hero{
         background-position-x: 75%;
+    }
+    #contact__heading{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 80%;
+        margin-top: 4rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .about-img::before{
+        top: -18px;
+        left: 16px;
+    }
+    .about-me{
+        width: 100%;
+        margin-top: 2rem;
     }
     .contact-form,.contact-form-2{
         flex-direction: column;
