@@ -451,6 +451,17 @@ span.slick-next:hover {
   width: 90%;
 }
 
+.about-content p{
+  color: #696969;
+}
+.about-content  > .heading{
+  margin-top: 2rem;
+  font-size: 15px;
+  position: relative;
+  font-weight: 600;
+
+}
+
 .quote {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -535,6 +546,27 @@ span.slick-next:hover {
   background: rgba(233, 231, 231, 0.658);
 }
 
+.stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: center;
+  margin: 4rem 0 0;
+  color: #121212;
+  padding:0.5rem;
+}
+
+.stats span{
+  font-size: 34px;
+  color: #121212;
+}
+
+.stats p{
+    color: #121212;
+    font-size: 18px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
 
 /* Testimonial */
 
@@ -618,17 +650,24 @@ span.slick-next:hover {
 }
 
 /* Footer */
-.slogan {
-  text-align: center;
-  padding: 0 15px 40px 15px;
+
+.map {
+  border-radius: 10px;
+  opacity: 1;
 }
 
-.slogan span {
-  display: block;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
+ .gmap_canvas {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.gmap_canvas iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.hide{
+  opacity: 0;
 }
 
 .footer__menu {
@@ -674,7 +713,7 @@ a.list__link {
   min-height: calc(100vh - 86vh);
   background-color: #121212;
   color: #fff;
-  padding: 100px 0 40px;
+  padding: 40px 0;
 }
 
 .fab {
@@ -844,6 +883,16 @@ a.list__link {
     text-align: left;
   }
 
+  .about-content p{
+    line-height: 1.75em;
+    
+  }
+
+  .about-content  > .heading{
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
   .carousel-2 {
     display: flex;
     justify-content: center;
@@ -866,13 +915,18 @@ a.list__link {
     font-size: 14px;
   }
 
-  .map {
-    border-radius: 10px;
-  }
 
-  .map iframe {
+  .gmap_canvas {
     border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
   }
+  
+  .gmap_canvas iframe {
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  
 
   .contact-details {
     display: flex;
@@ -997,6 +1051,12 @@ a.list__link {
   .about-content h2 {
     margin-top: 3rem;
   }
+  .about-content p{
+    line-height: 1.75em;
+  }
+
+
+
   .social-icons {
     top: unset;
     left: unset;

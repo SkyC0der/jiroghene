@@ -6,6 +6,25 @@ $(document).ready(function () {
   var backButton = '<span class="slick-prev"></span>';
   var nextButton = '<span class="slick-next"></span>'
 
+  $('.count').each(function() {
+
+    $(this).prop('counter', 0).animate({
+  
+      counter: $(this).text()
+  
+    }, {
+  
+      duration: 4000,
+  
+      easing: 'swing',
+  
+      step: function(now) {
+  
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+
   $win
     .on('scroll', function () {
       if ($(this).scrollTop() > '20') {
@@ -99,4 +118,24 @@ $(document).ready(function () {
     ]
   });
 
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+   let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+     current += increment;
+     obj.textContent = current;
+     if (current == end) {
+      clearInterval(timer);
+     }
+    }, step);
+  }
+
+  counter("count-1",0,100,3000);
+  counter("count-2",0,50,2000);
 });
