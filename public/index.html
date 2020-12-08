@@ -160,23 +160,33 @@
           </div>
 
           <div class="about-content mt-4">
-            <p>
-              Jiroghene Photography Studio is made up of organized team of photographers based in 
-              Benin-City, Edo State, Nigeria and we are available to travel just for you!
-            </p>
+            <div>
+              <p id="about-text">
+                Jiroghene Photography Studio is made up of organized team of photographers based in 
+                Benin-City, Edo State, Nigeria and we are available to travel just for you!
+              </p>
+            </div>
 
-            <h1 class="heading ">Our   Services</h1>
-            <p>
-              Looking for where to take the best pictures? You are in the right place!
-              We provide photography services, videography services, printing services, training, internship and studio rental services.
-            </p>
+            <div >
+              <h1 id="about-text" class="heading">Our   Services</h1>
+            </div>
+            <div>
+              <p id="about-text">
+                Looking for where to take the best pictures? You are in the right place!
+                We provide photography services, videography services, printing services, training, internship and studio rental services.
+              </p>
+            </div>
 
-            <h1 class="heading">Our  Goals</h1>
-            <p>
-              We aim at creating relationships with clients, by listening to their visions and incorporating it with style – 
-              This approach results in beautiful, authentic photographs that will become your legacy for future generations. 
-              We aim to provide maximum satisfaction for all our clients by giving them the best of the best.
-            </p>
+            <div>
+              <h1 class="heading" id="about-text">Our  Goals</h1>
+            </div>
+            <div >
+              <p id="about-text">
+                We aim at creating relationships with clients, by listening to their visions and incorporating it with style – 
+                This approach results in beautiful, authentic photographs that will become your legacy for future generations. 
+                We aim to provide maximum satisfaction for all our clients by giving them the best of the best.
+              </p>
+            </div>
 
           
 
@@ -528,6 +538,14 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+      let tl = gsap.timeline({defaults: {ease: "power4"}});
+       
+      tl
+      .to("#about-text", {ease: "power4", y:'0%', duration:.9, stagger:.65})
+      
+    </script>
   
     <script src="./js/main.js"></script>
   </body>

@@ -454,12 +454,22 @@ span.slick-next:hover {
 .about-content p{
   color: #696969;
 }
-.about-content  > .heading{
+.about-content  .heading{
   margin-top: 2rem;
   font-size: 15px;
   position: relative;
   font-weight: 600;
 
+}
+
+.about-content div{
+  overflow:hidden;
+  background-color: #fff;
+}
+
+#about-text{
+  display: inline-block;
+  transform: translateY(120%);
 }
 
 .quote {

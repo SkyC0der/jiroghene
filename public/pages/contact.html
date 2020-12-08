@@ -78,27 +78,33 @@
       </section>
 
      <div id="contact__heading" class="container">
-       <div class="about-img img-fluid">
-         <img src="/img/about-me.jpg" alt="Jiroghene Ikubor" class="">
-       </div>
+        <div class="about-img img-fluid">
+          <img src="/img/about-me.jpg" alt="Jiroghene Ikubor" class="">
+        </div>
        <div class="about-me">
-         <div class="serif">
-          <p class="about-heading text-dark">Hey there,</p>
-          <p> I'm Josephine Ewere Jiroghene Ikubor,  the <span class="important"><a href="/gallery">photograpHER</a></span>.
-           Creative director & CEO, Jiroghene Studios and Academy. 
-          </p>
+         <div>
+          <div class="serif">
+            <p id="about-text" class="about-heading text-dark">Hey there,</p>
+            <p id="about-text"> I'm Josephine Ewere Jiroghene Ikubor,  the <span class="important"><a href="#">photograpHER</a></span>.
+             Creative director & CEO, Jiroghene Studios and Academy. 
+            </p>
+           </div>
          </div>
 
-         <p>
-          While taking a course in graphic and web design I discovered my love  for photography. I started photography in 2017 while in high school and attended a professional photography school after graduating from Louisville girls secondary school, Abuja. 
-          I specialize in portrait, studio and event photography. I dabble in beauty, lifestyle, product and documentary photography as well, so do not be afraid to ask for something out.
-          I describe my photography as simple, yet I try to portray intimacy and relativity of my subjects in my photographs. I desire raw emotions in still motion in my photographs and create memories that will last forever.
-         </p>
+         <div>
+          <p id="about-text">
+            While taking a course in graphic and web design I discovered my love  for photography. I started photography in 2017 while in high school and attended a professional photography school after graduation. 
+            I specialize in portrait, beauty and event photography. I dabble in lifestyle, product and documentary photography as well, so do not be afraid to ask for something out.
+            I describe my photography as simple, yet I try to portray intimacy and relativity of my subjects in my photographs. I desire raw emotions in still motion in my photographs and create memories that will last forever.
+           </p>
+           
+         </div>
          
-         
-          <p>
-          Please, kindly take a moment to view my <span class="important"><a href="/gallery">works</a></span>. I’d like to help you with your photography needs that you may have so please do not hesitate to <span class="important"><a href="#contact">contact me</a></span> to discuss your ideas.
-         </p>
+         <div>
+            <p id="about-text">
+            Please, kindly take a moment to view my <span class="important"><a href="/gallery">works</a></span>. I’d like to help you with your photography needs that you may have so please do not hesitate to <span class="important"><a href="#contact">contact me</a></span> to discuss your ideas.
+           </p>
+         </div>
        </div>
      </div>
 
@@ -217,5 +223,14 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+      let tl = gsap.timeline({defaults: {ease: "power4"}});
+       
+      tl
+      
+      .to("#about-text", {ease: "power4", y:'0%', duration:.9, stagger:1})
+      
+    </script>
   </body>
 </html>

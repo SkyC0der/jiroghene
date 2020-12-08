@@ -8,7 +8,7 @@ body{
 }
 
 p{
-    color: #666;
+    color: #565;
 }
 
 h2{
@@ -46,8 +46,17 @@ img{
     line-height: 2;
 }
 
+.about-me div{
+    overflow:hidden;
+    background-color: #fff;
+}
+
+#about-text{
+    display: inline-block;
+    transform: translateY(120%);
+}
+
 .about-img{
-    width: 50%;
     position: relative;   
 }
 
