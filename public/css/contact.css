@@ -58,6 +58,7 @@ img{
 
 .about-img{
     position: relative;   
+    width: 50%;
 }
 
 .about-img:before{

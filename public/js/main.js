@@ -139,3 +139,11 @@ document.addEventListener("DOMContentLoaded", () => {
   counter("count-1",0,100,3000);
   counter("count-2",0,50,2000);
 });
+
+gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline({
+        scrollTrigger:{
+          trigger: '#about-text'
+        },
+      });
+       
