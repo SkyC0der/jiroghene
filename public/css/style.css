@@ -379,6 +379,11 @@ span.slick-next:hover {
 
 /* Title Section */
 
+small.heading{
+  font-size: 10px;
+  font-weight: 600;
+}
+
 #title {
   margin-top: 6rem;
   text-align: center;
@@ -997,6 +1002,10 @@ a.list__link {
   }
   .navbar-nav li.nav-item {
     text-align: left;
+  }
+
+  small{
+    font-size: 12px;
   }
 
   #portfolio,

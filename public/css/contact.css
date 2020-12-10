@@ -349,6 +349,17 @@ img{
     
     .img-top img{
         object-fit: cover;
+        object-position: 0% 25%;
+    }
+
+    #retouching{
+        display: flex;
+        justify-content: center;
+        background: rgb(67,36,25);
+    }
+    #retouching img{
+        object-fit: contain;
+        width: auto;
     }
 
     .img-top:hover{
