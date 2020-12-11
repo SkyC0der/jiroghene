@@ -120,7 +120,6 @@ $(document).ready(function () {
 
 });
 
-document.addEventListener("DOMContentLoaded", () => {
   function counter(id, start, end, duration) {
    let obj = document.getElementById(id),
     current = start,
@@ -136,6 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, step);
   }
 
-  counter("count-1",0,100,3000);
-  counter("count-2",0,50,2000);
+  function callMe(){
+    counter("count-1",0,100,5000)
+    counter("count-2",0,50,4000);
+  }
+
+
+ScrollTrigger.create({
+  trigger: 'stats',
+  start:'top',
+  onEnter: callMe,
 });
