@@ -59,7 +59,7 @@ app.get('/academy/professional', function(req, res) {
 });
 
 app.get('/academy/retouching', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/pages/services.html'));
+    res.sendFile(path.join(__dirname + '/public/pages/retouching.html'));
 });
 
 app.use(function (req, res, next) {

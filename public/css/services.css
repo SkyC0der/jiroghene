@@ -103,6 +103,10 @@ ul {
   background-color: #b36d6b;
 }
 
+#img-cover{
+  object-fit: contain;
+}
+
 .return {
   position: absolute;
   left: 60px;
