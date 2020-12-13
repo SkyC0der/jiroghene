@@ -140,7 +140,17 @@ $(document).ready(function () {
     counter("count-2",0,50,4000);
   }
 
-
+  gsap.registerPlugin(ScrollTrigger);
+  let tl = gsap.timeline({
+    scrollTrigger:{
+      trigger: '.about-content',
+      start:'top center',
+    },
+  });    
+  tl
+  .to("#about-text", {
+    ease: "power4", y:'0%', duration:.85, stagger:.45})
+    
 ScrollTrigger.create({
   trigger: 'stats',
   start:'top',

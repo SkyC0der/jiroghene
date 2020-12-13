@@ -92,7 +92,7 @@
             <a href="/gallery#filter=.portraits">
               <div class="carousel-image">
                 <img
-                  src="./img/Portrait-sideshow.jpg"
+                data-src="./img/Portrait-sideshow.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -106,7 +106,7 @@
             <a href="/gallery#filter=.beauty">
               <div class="carousel-image">
                 <img
-                  src="./img/Beauty-slideshow.jpg"
+                data-src="./img/Beauty-slideshow.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -119,7 +119,7 @@
             <a href="/gallery#filter=.weddings">
               <div class="carousel-image">
                 <img
-                  src="./img/weddings-slideshow.jpg"
+                  data-src="./img/weddings-slideshow.jpg"
                   class="w-100"
                   alt="carousel-image"
                 />
@@ -134,7 +134,7 @@
                 <picture>
                   <source srcset="./img/kids-slideshow.jpg 2x" sizes="((min-width: 1200px) and (orientation: landscape)) 2880px,
                   100vw">
-                  <img src="./img/kids-slideshow.jpg" alt="wedding photography" class="w-100">
+                  <img data-src="./img/kids-slideshow.jpg" alt="wedding photography" class="w-100">
                 </picture>
               </div>
               <div class="carousel-caption">
@@ -220,161 +220,7 @@
         </div>
       </section>
 
-      <!-- Recent Shots -->
-      <!-- <div id="recents" class="mb-5 container">
       
-        <div class="carousel-2">
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.portraits">
-              <article>
-                <div class="img-top">
-                  <img src="./img/portrait-8.jpg" alt="" />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">
-                      Portrait Photography
-                    </div>
-                    <div class="item__title serif">
-                      <span>Classic and Vogue</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.commercial">
-              <article>
-                <div class="img-top">
-                  <img src="./img/commercial-3.jpg" alt="commercial-photography" />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">
-                      Commercial Photography
-                    </div>
-                    <div class="item__title serif">
-                      <span> Yummy Treats</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.kids">
-              <article>
-                <div class="img-top">
-                  <img
-                    src="./img/kid-7.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">Family Photos</div>
-                    <div class="item__title serif">
-                      <span>Son Of The Earth</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.lifestyle">
-              <article>
-                <div class="img-top">
-                  <img
-                    src="./img/portrait-13.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">
-                      Lifestyle and Events
-                    </div>
-                    <div class="item__title serif">
-                      <span>African Queen</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.portraits">
-              <article>
-                <div class="img-top">
-                  <img
-                    src="./img/portrait-6.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">
-                      Lifestyle and Events
-                    </div>
-                    <div class="item__title serif">
-                      <span>African Queen</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-
-
-          <div class="carousel-slide">
-            <a href="/gallery#filter=.portraits">
-              <article>
-                <div class="img-top">
-                  <img
-                    src="./img/portrait-17.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="carousel-caption-2">
-                  <header>
-                    <div class="item__category heading">
-                      Lifestyle and Events
-                    </div>
-                    <div class="item__title serif">
-                      <span>Mama Africa</span>
-                    </div>
-                  </header>
-                  <p>
-                    Classic human, he strikes an awesome pose. Classic. Vogue!
-                  </p>
-                </div>
-              </article>
-            </a>
-          </div>
-        </div>
-      </div> -->
-
       <div id="testimonials" class="container">
         <h2 class="text-center serif">Testimonials</h2>
         <div class="testimonial-carousel">
@@ -537,20 +383,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-      let tl = gsap.timeline({
-        scrollTrigger:{
-          trigger: '.about-content',
-          start:'top center',
-        },
-      });    
-      tl
-      .to("#about-text", {
-        ease: "power4", y:'0%', duration:.85, stagger:.45})
-
-    </script>
-  
     <script src="./js/main.js"></script>
+    <script src="./js/lazyload.js"></script>
   </body>
 </html>

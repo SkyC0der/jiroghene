@@ -1027,6 +1027,7 @@ a.list__link {
 
 .copy p {
   font-size: 12px;
+  color: #fff;
 }
 .copy a {
   text-decoration: underline;
