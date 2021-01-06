@@ -796,9 +796,6 @@ a.list__link {
   font-size: 18px;
 }
 
-
-
-
 @media only screen and (min-width: 1025px) {
   #title {
     position: relative;
@@ -1074,9 +1071,6 @@ a.list__link {
   .about-content p{
     line-height: 1.75em;
   }
-
-
-
   .social-icons {
     top: unset;
     left: unset;
@@ -1100,5 +1094,42 @@ a.list__link {
   .footer-body {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  .navbar{
+    padding: 0.5rem;
+  }
+  .navbar-nav{
+    padding-left: .5rem;
+  }
+  .nav-link{
+    margin-top: .5rem
+  }
+  h2{
+    font-size: 1.65rem;
+  }
+  h3{
+    font-size: 1.45rem;
+  }
+  p{
+    font-size: .9rem;;
+  }
+  .quote figcaption{
+    font-size: 16px;
+  }
+  .quote.testimonial blockquote{
+    font-size: 15px;
+  }
+  .stats span{
+    font-size: 28px;
+  }
+  .stats p{
+    font-size: 14px;
+  }
+  #about > span{
+    font-size: 1.5rem;
   }
 }
